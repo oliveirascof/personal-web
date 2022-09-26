@@ -3,7 +3,7 @@ import { Button } from '@mui/material'
 
 function App() {
   return (
-    <Button variant="primary"> Test Button of Material UI</Button>
+    <Button variant="secondary"> Testing button design</Button>
   )
 }
 

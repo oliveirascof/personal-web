@@ -6,7 +6,7 @@ import pyautogui as py
 py.alert("Iniciar o repositorio")
 init = os.popen("git init")
 sl(1)
-py.alert("Adicionando todos os arquivos")
+py.alert("Adicionar todos os arquivos")
 git_add = os.popen("git add -A")
 sl(1)
 commit = py.prompt("Digite a mensagem do commit")
