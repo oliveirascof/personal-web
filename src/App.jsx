@@ -1,9 +1,11 @@
 import React from 'react'
-import { Button } from '@mui/material'
+import Header from './components/Header/Header'
 
 function App() {
   return (
-    <Button variant="secondary"> Testing button design</Button>
+      <>
+        <Header />
+      </>
   )
 }
 
