@@ -12,7 +12,7 @@ os.popen("git add -A")
 commit = py.prompt("Digite a mensagem para o commit")
 
 # Realiza o commit
-os.popen(f'git commit -m "{commit}" ')
+os.popen(f'git commit -m "{commit}"')
 sl(1)
 
 py.alert("Commit feito! Agora vamos subir os arquivos para o Github")

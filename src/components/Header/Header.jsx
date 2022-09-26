@@ -1,20 +1,28 @@
 import React from 'react'
-import { Box, Toolbar, AppBar, Typography, Button } from '@mui/material'
+import { Button } from '@mui/material'
+import { 
+  AppBarStyled, 
+  ToolBarStyled, 
+  TypographyText, 
+  BoxStyled } from './style'
 
-function Header() {
+const Header = () => {
   return (
-      <AppBar position="fixed" >
-        <Toolbar variant="regular" sx={{ display: 'flex', alignItems: 'center', justifyContent: "space-between", textAlign: 'center' }}>
-          <Typography 
-            variant="h5" sx={{fontWeight: "bold"}} > Felipe's Portfolio
-            </Typography>
-            <Box sx={{display: "flex", marginLeft: 10, marginRight: 10}}>
-            <Button variant="outline">My projects</Button>
-            <Button variant="outline">Social networks</Button>
-            <Button variant="outline">Contact me</Button>
-          </Box>
-        </Toolbar>
-      </AppBar>
+      <AppBarStyled position='absolute'>
+        <ToolBarStyled >
+
+          <TypographyText > 
+            Felipe Portifolio
+          </TypographyText>
+
+          <BoxStyled >
+            <Button variant="contained">My projects</Button>
+            <Button variant="contained">Social networks</Button>
+            <Button variant="contained">Contact me</Button>
+          </BoxStyled>
+
+        </ToolBarStyled>
+      </AppBarStyled>
   )
 }
 
