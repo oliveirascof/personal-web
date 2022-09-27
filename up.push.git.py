@@ -14,7 +14,9 @@ print(git_add)
 sl(1)
 
 # Altera para branch main
-branch_main = os.popen("git branch -M main").read()
+os.popen("git branch -M main")
+sl(1)
+branch_main = os.popen("git branch").read()
 print(branch_main)
 sl(1)
 
@@ -28,7 +30,7 @@ sl(1)
 py.alert("Commit feito! Agora vamos subir os arquivos para o Github")
 
 # Realiza o push para o repositorio no Github
-git_push = os.popen("git push -u origin main").read()
+git_push = os.popen("git push -f origin main").read()
 print(git_push)
 sl(1)
 
