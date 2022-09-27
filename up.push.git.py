@@ -20,6 +20,8 @@ py.alert("Commit feito! Agora vamos subir os arquivos para o Github")
 # Realiza o push para o repositorio no Github
 git_push = os.popen("git push -u origin main")
 
+py.alert(git_push)
+
 py.alert("Finalizado! Arquivos estão no git")
 
 
