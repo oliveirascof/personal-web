@@ -4,21 +4,29 @@ from time import sleep as sl
 import pyautogui as py
 
 # Abre o cmd e inicializa o repo
-os.popen("git init")
+git_init = os.popen("git init").read()
+print(git_init)
 
 # Adiciona os arquivos modificados na lista para commit
-os.popen("git add -A")
+git_add = os.popen("git add -A").read()
+print(git_add)
+
+# Altera para branch main
+branch_main = os.popen("git branch -M main").read()
+print(branch_main)
 
 commit = py.prompt("Digite a mensagem para o commit")
 
 # Realiza o commit
-os.popen(f'git commit -m "{commit}"')
+commit = os.popen(f'git commit -m "{commit}"').read()
+print(commit)
 sl(1)
 
 py.alert("Commit feito! Agora vamos subir os arquivos para o Github")
 
 # Realiza o push para o repositorio no Github
-git_push = os.popen("git push -u origin main")
+git_push = os.popen("git push -u origin main").read()
+print(git_push)
 
 py.alert(git_push)
 
