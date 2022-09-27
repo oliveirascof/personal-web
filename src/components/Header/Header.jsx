@@ -1,24 +1,32 @@
 import React from 'react'
-import { Button } from '@mui/material'
+import { Avatar } from "@mui/material"
 import { 
   AppBarStyled, 
   ToolBarStyled, 
-  TypographyText, 
-  BoxStyled } from './style'
+  TitleStyle, 
+  ButtonMenu,
+  BoxStyled, 
+} from './styles'
 
 const Header = () => {
   return (
-      <AppBarStyled position='absolute'>
+      <AppBarStyled position='static'>
         <ToolBarStyled >
 
-          <TypographyText > 
-            Felipe Portifolio
-          </TypographyText>
+          <BoxStyled >
+            <Avatar 
+              alt="myLogo" 
+              src="/src/assets/images/Logo/myLogo.png"/>
+            <TitleStyle > 
+              Felipe's Portifolio
+            </TitleStyle>
+          </BoxStyled>
 
           <BoxStyled >
-            <Button variant="contained">My projects</Button>
-            <Button variant="contained">Social networks</Button>
-            <Button variant="contained">Contact me</Button>
+            <ButtonMenu variant="contained" color="info">My projects</ButtonMenu>
+            <ButtonMenu variant="contained" color="info">Social networks</ButtonMenu>
+            <ButtonMenu variant="contained" color="info">Contact</ButtonMenu>
+            <ButtonMenu variant="contained" color="info">About</ButtonMenu>
           </BoxStyled>
 
         </ToolBarStyled>
