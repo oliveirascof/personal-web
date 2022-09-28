@@ -32,7 +32,7 @@ if not sair:
     exit()
 
 git_push = popen("git push -f origin main").read()
-alert(git_push)
 
 alert("Finalizado!")
+popen("brave https://github.com/oliveirascof/personal-web")
 exit()
