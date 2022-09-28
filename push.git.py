@@ -10,18 +10,16 @@ git_init = popen("git init").read()
 
 # Adiciona os arquivos modificados na lista para commit
 git_add = popen("git add -A").read()
-alert("Itens adicionados para o commit")
 
 # Altera para branch main
 popen("git branch -M main")
 branch_main = popen("git branch").read()
-alert(f"Branch atual -> {branch_main}")
 
-commit = prompt("Digite a mensagem para o commit")
+commit = prompt("Mensagem para o commit")
 comm = mb.askyesno('Commit', 'Proceder com o commit?')
+
 if not comm:
     exit()
-    
 # Realiza o commit
 commit = popen(f'git commit -m "{commit}"').read()
 
