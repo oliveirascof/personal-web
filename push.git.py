@@ -26,7 +26,7 @@ commit = prompt("Mensagem para o commit")
 popen(f'git commit -m "{commit}"') 
 
 # Pergunta ao usuario se ele quer subir o push # ---------------------->
-push = mb.askyesno('Push', 'Sim para Push')
+push = mb.askyesno('Push', 'Deseja fazer o Push ?')
 if not push:
     exit()
     
