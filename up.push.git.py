@@ -45,5 +45,5 @@ print("OK")
 sleep(1)
 
 alert("Finalizado! Arquivos estão no git")
-alert(f"{git_push}")
+alert(str(git_push))
 exit()
