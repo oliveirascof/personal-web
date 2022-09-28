@@ -30,8 +30,8 @@ sleep(1)
 commit = prompt("Digite a mensagem para o commit")
 alert(commit)
 # Realiza o commit
-comm = mb.askyesno('Push', 'Deseja subir para o Git?')
-if comm:
+comm = mb.askyesno('Commit', 'Vamos fazer o commit?')
+if not comm:
     exit()
 
 commit = popen(f'git commit -m "{commit}"').read()
@@ -41,7 +41,7 @@ alert("Commit feito! Agora vamos subir os arquivos para o Github")
 
 # Realiza o push para o repositorio no Github
 sair = mb.askyesno('Push', 'Deseja subir para o Git?')
-if sair:
+if not sair:
     exit()
 
 git_push = popen("git push -f origin main").read()
