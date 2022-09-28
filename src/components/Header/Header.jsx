@@ -17,9 +17,6 @@ const Header = () => {
             <Avatar 
               alt="myLogo" 
               src="/src/assets/images/Logo/myLogo.png"/>
-            <TitleStyle > 
-              Felipe's Portifolio
-            </TitleStyle>
           </BoxStyled>
 
           <BoxStyled >

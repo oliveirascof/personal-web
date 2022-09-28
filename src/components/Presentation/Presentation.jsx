@@ -16,6 +16,27 @@ const View = styled.div`
   justify-content: center;
 `
 
+const Gradient = styled.h1`
+  font-size: 5rem;
+  
+  /* Set the background of
+  the text  */
+  background:
+      linear-gradient(to right,
+          #fcc133,
+          #334efc);
+  display: inline-block;
+
+  /* Clip the background upto
+  the text  */
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  /* Set the color of the text
+  to transparent  */
+  color: transparent;
+`
+
 const Presentation = () => {
   return (
     <View>
@@ -27,9 +48,14 @@ const Presentation = () => {
       <Div >
         <Box >
 
-          <Typography variant="h1" color="white" textAlign={"left"} fontWeight={"bold"} >
-            Wellcome here!
-          </Typography>
+          
+            <Typography variant="h1" color="white" textAlign={"left"} fontWeight={"bold"} >
+            <Gradient>
+              Wellcome here!
+            </Gradient>
+            </Typography>
+          
+          
 
           <Typography sx={{marginTop: 2}} textAlign={"left"} variant="h5" color="white" >
             Always learning
