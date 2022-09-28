@@ -5,31 +5,33 @@ from pyautogui import alert
 from pyautogui import prompt
 from tkinter import messagebox as mb
 
-# Abre o cmd e inicializa o repo
-git_init = popen("git init").read() # ---------------------->
+# Abre o cmd e inicializa o repo # ---------------------->
+git_init = popen("git init")
 
-# Adiciona os arquivos modificados na lista para commit
-git_add = popen("git add -A").read() # ---------------------->
+# Adiciona os arquivos na lista para commit # ---------------------->
+git_add = popen("git add -A")
 
-# Altera para branch main
+# Altera para a branch main # ---------------------->
 popen("git branch -M main")
-branch_main = popen("git branch").read()
+popen("git branch")
 
+# Aguarda input do usuario # ---------------------->
 commit = prompt("Mensagem para o commit")
-#comm = mb.askyesno('Commit', 'Sim para Commit')
 
+#comm = mb.askyesno('Commit', 'Sim para Commit')
 #if not comm:
 #    exit()
 
-# Realiza o commit
-commit = popen(f'git commit -m "{commit}"').read() # ---------------------->
+# Realiza o commit # ---------------------->
+popen(f'git commit -m "{commit}"') 
 
-# Realiza o push para o repositorio no Github
-#sair = mb.askyesno('Push', 'Sim para Push')
-#if not sair:
-#    exit()
-
-git_push = popen("git push -f origin main").read() # ---------------------->
+# Pergunta ao usuario se ele quer subir o push # ---------------------->
+push = mb.askyesno('Push', 'Sim para Push')
+if not push:
+    exit()
+    
+# Realiza o push para o repo no Github # ---------------------->
+popen("git push -f origin main")
 
 alert("Finalizado!")
 
