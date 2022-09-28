@@ -1,13 +1,13 @@
 import React from 'react'
 import Header from './components/Header/Header'
-import Presentation from './components/Presentation/Presentation'
+import Home from './components/Home/Home'
 
 const App = () => {
   return (
-      <>
+      <React.Fragment>
         <Header />
-        <Presentation />
-      </>
+        <Home />
+      </React.Fragment>
   )
 }
 
