@@ -1,23 +1,21 @@
 import React from "react";
 import styled from "styled-components";
 import { Typography, Button, Avatar, Box } from '@mui/material'
+import FileDownloadIcon from '@mui/icons-material/FileDownload';
 
 const Div = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
+	justify-content: center;
   margin: 40px 100px 40px 100px ;
 `
 const View = styled.div`
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   width: 100%;
   height: 100%;
-
 `
 
 const Presentation = () => {
@@ -25,11 +23,12 @@ const Presentation = () => {
     <View>
 
       <Div>
-        <Avatar sx={{width: "100%", height: "100%"}} alt="myLogo" src="/src/assets/images/Logo/myLogo.png"/>
+        <Avatar sx={{width: "auto", height: "auto"}} alt="myLogo" src="/src/assets/images/Logo/myLogo.png"/>
       </Div>
 
       <Div >
         <Box >
+
           <Typography variant="h2" color="white" textAlign={"left"} fontWeight={"bold"} >
             Wellcome here!
           </Typography>
@@ -39,8 +38,13 @@ const Presentation = () => {
           </Typography>
 
           <Typography>
-            <Button sx={{marginTop: 5}} variant="contained" >My Resume</Button>
+            <Button 
+              startIcon={ <FileDownloadIcon /> } 
+              size="large" 
+              sx={{marginTop: 5}} 
+              variant="contained" >My Resume</Button>
           </Typography>
+
         </Box>
       </Div>
 
