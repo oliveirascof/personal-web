@@ -5,17 +5,15 @@ import FileDownloadIcon from '@mui/icons-material/FileDownload';
 
 const Div = styled.div`
   display: flex;
-  flex-direction: column;
   align-items: center;
 	justify-content: center;
-  margin: 40px 100px 40px 100px ;
+  margin: 10rem;
+
 `
 const View = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
-  height: 100%;
 `
 
 const Presentation = () => {
@@ -23,13 +21,13 @@ const Presentation = () => {
     <View>
 
       <Div>
-        <Avatar sx={{width: "auto", height: "auto"}} alt="myLogo" src="/src/assets/images/Logo/myLogo.png"/>
+        <Avatar sx={{width: "auto", height: "auto"}} alt="myLogo" src="/src/assets/images/Logo/myLogo.webp"/>
       </Div>
 
       <Div >
         <Box >
 
-          <Typography variant="h2" color="white" textAlign={"left"} fontWeight={"bold"} >
+          <Typography variant="h1" color="white" textAlign={"left"} fontWeight={"bold"} >
             Wellcome here!
           </Typography>
 

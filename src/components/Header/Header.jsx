@@ -23,10 +23,10 @@ const Header = () => {
           </BoxStyled>
 
           <BoxStyled >
-            <ButtonMenu variant="contained" color="info">My projects</ButtonMenu>
-            <ButtonMenu variant="contained" color="info">Social networks</ButtonMenu>
-            <ButtonMenu variant="contained" color="info">Contact</ButtonMenu>
-            <ButtonMenu variant="contained" color="info">About</ButtonMenu>
+            <ButtonMenu variant="contained" size="large" color="info">My projects</ButtonMenu>
+            <ButtonMenu variant="contained" size="large" color="info">Social networks</ButtonMenu>
+            <ButtonMenu variant="contained" size="large" color="info">Contact</ButtonMenu>
+            <ButtonMenu variant="contained" size="large" color="info">About</ButtonMenu>
           </BoxStyled>
 
         </ToolBarStyled>
