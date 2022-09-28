@@ -35,10 +35,8 @@ if not comm:
 
 commit = popen(f'git commit -m "{commit}"').read()
 
-alert("Commit feito! Agora vamos subir os arquivos para o Github")
-
 # Realiza o push para o repositorio no Github
-sair = mb.askyesno('Push', 'Deseja subir para o Git?')
+sair = mb.askyesno('Commit feito', 'Deseja subir para o Git?')
 if not sair:
     exit()
 
