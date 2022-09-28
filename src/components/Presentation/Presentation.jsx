@@ -17,23 +17,13 @@ const View = styled.div`
 `
 
 const Gradient = styled.h1`
-  font-size: 5rem;
-  
-  /* Set the background of
-  the text  */
-  background:
-      linear-gradient(to right,
-          #fcc133,
-          #334efc);
+  font-size: 10rem;
+  background: linear-gradient( to right,#fcc133,#334efc);
   display: inline-block;
 
-  /* Clip the background upto
-  the text  */
   -webkit-background-clip: text;
   background-clip: text;
 
-  /* Set the color of the text
-  to transparent  */
   color: transparent;
 `
 
