@@ -3,6 +3,7 @@ from os import popen
 from time import sleep
 from pyautogui import alert
 from pyautogui import prompt
+from tkinter import messagebox as mb
 
 # Abre o cmd e inicializa o repo
 git_init = popen("git init").read()
@@ -27,23 +28,26 @@ print("OK")
 sleep(1)
 
 commit = prompt("Digite a mensagem para o commit")
-
+alert(commit)
 # Realiza o commit
-print("Realizando o commit...")
+comm = mb.askyesno('Push', 'Deseja subir para o Git?')
+if comm:
+    exit()
+
 commit = popen(f'git commit -m "{commit}"').read()
-print(commit)
-print("OK")
 sleep(1)
 
 alert("Commit feito! Agora vamos subir os arquivos para o Github")
 
 # Realiza o push para o repositorio no Github
-print("Fazendo o push para o github")
+sair = mb.askyesno('Push', 'Deseja subir para o Git?')
+if sair:
+    exit()
+
 git_push = popen("git push -f origin main").read()
 print(git_push)
 print("OK")
 sleep(1)
 
-alert("Finalizado! Arquivos estão no git")
-alert(str(git_push))
+alert("Finalizado!")
 exit()
