@@ -16,18 +16,18 @@ popen("git branch -M main")
 branch_main = popen("git branch").read()
 
 commit = prompt("Mensagem para o commit")
-comm = mb.askyesno('Commit', 'Sim para Commit')
+#comm = mb.askyesno('Commit', 'Sim para Commit')
 
-if not comm:
-    exit()
+#if not comm:
+#    exit()
 
 # Realiza o commit
 commit = popen(f'git commit -m "{commit}"').read() # ---------------------->
 
 # Realiza o push para o repositorio no Github
-sair = mb.askyesno('Push', 'Sim para Push')
-if not sair:
-    exit()
+#sair = mb.askyesno('Push', 'Sim para Push')
+#if not sair:
+#    exit()
 
 git_push = popen("git push -f origin main").read() # ---------------------->
 
