@@ -5,14 +5,14 @@ from pyautogui import alert
 from pyautogui import prompt
 
 # Abre o cmd e inicializa o repo
-git_init = os.popen("git init").read()
+git_init = popen("git init").read()
 print("Inicializando repositorio")
 print(git_init)
 print("OK")
 sleep(1)
 
 # Adiciona os arquivos modificados na lista para commit
-git_add = os.popen("git add -A").read()
+git_add = popen("git add -A").read()
 print("Adicionando itens na lista para o commit")
 print(git_add)
 print("OK")
@@ -20,8 +20,8 @@ sleep(1)
 
 # Altera para branch main
 print("Checando a branch e setando para main")
-os.popen("git branch -M main")
-branch_main = os.popen("git branch").read()
+popen("git branch -M main")
+branch_main = popen("git branch").read()
 print(branch_main)
 print("OK")
 sleep(1)
@@ -45,4 +45,5 @@ print("OK")
 sleep(1)
 
 alert("Finalizado! Arquivos estão no git")
+alert(f"{git_push}")
 exit()
