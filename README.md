@@ -12,16 +12,16 @@ npm install @mui/material @emotion/react @emotion/styled
 npm install @mui/material @mui/styled-engine-sc styled-components
 
 ### Adicionando a Fonte Roboto no projeto:
-<link
+"<"link
   rel="stylesheet"
   href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
-/>
+"/>"
 
 ### Icones de fontes
-<link
+"<"link
   rel="stylesheet"
   href="https://fonts.googleapis.com/icon?family=Material+Icons"
-/>
+"/>"
 
 ### Icones SVG
 npm install @mui/icons-material

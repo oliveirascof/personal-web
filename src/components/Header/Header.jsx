@@ -2,20 +2,20 @@ import React from 'react'
 import styled from 'styled-components'
 import { AppBar, Toolbar, Box, Button, Avatar } from '@mui/material'
 
-function MyAvatar () {
-  return <Avatar alt="myLogo" src="/src/assets/images/Logo/myLogo.webp"/>
+function MyAvatarHeader () {
+  return <Avatar alt="myLogo" src="/src/assets/images/Logo/myLogo.png"/>
 }
 
 const Header = () => {
   return (
-    <StyleAppBar position='absolute' >
+    <StyleAppBar position='fixed' >
         <StyleTooBar >
 
           <StyleBox >
-            <MyAvatar />
+            <MyAvatarHeader />
           </StyleBox>
 
-          <StyleBox >
+          <StyleBox  >
             <StyleButton variant="contained" size="large" color="info"> My projects </StyleButton>
             <StyleButton variant="contained" size="large" color="info"> Social networks </StyleButton>
             <StyleButton variant="contained" size="large" color="info"> Contact </StyleButton>
@@ -29,13 +29,13 @@ const Header = () => {
 
 const StyleAppBar = styled(AppBar)`
   display: flex;
+  height: 60px;
 `
 const StyleTooBar = styled(Toolbar)`
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex: 1;
-  padding: 1rem;
 
 `
 const StyleTitle = styled.h1`
@@ -49,6 +49,7 @@ const StyleBox = styled(Box)`
   display: flex; 
   align-items: center;
   justify-content: center;
+  
 `
 const StyleButton = styled(Button)`
   margin-left: 10px;
@@ -56,6 +57,7 @@ const StyleButton = styled(Button)`
   &&:hover {
     background-color: #0000ff;
   }
+  
 `
 
 export default Header

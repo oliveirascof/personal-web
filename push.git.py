@@ -29,7 +29,7 @@ popen(f'git commit -m "{commit}"')
 push = mb.askyesno('Push', 'Deseja fazer o Push ?')
 if not push:
     exit()
-    
+
 # Realiza o push para o repo no Github # ---------------------->
 popen("git push -f origin main")
 
