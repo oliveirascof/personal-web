@@ -16,7 +16,7 @@ const Header = () => {
           </StyleBox>
 
           <StyleBox  >
-            <StyleButton variant="contained" size="large" color="info"> My projects </StyleButton>
+            <StyleButton variant="contained" size="large" color="primary"> My projects </StyleButton>
             <StyleButton variant="contained" size="large" color="info"> Social networks </StyleButton>
             <StyleButton variant="contained" size="large" color="info"> Contact </StyleButton>
             <StyleButton variant="contained" size="large" color="info"> About </StyleButton>
