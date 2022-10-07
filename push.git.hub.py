@@ -31,7 +31,7 @@ if not push:
     exit()
 
 # Realiza o push para o repo no Github # ---------------------->
-push = popen("git push -f origin main")
+push = popen("git push -f origin main").read()
 print(push)
 alert("Finalizado!")
 
