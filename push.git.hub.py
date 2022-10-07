@@ -1,8 +1,7 @@
 from sys import exit
 from os import popen
 from time import sleep
-from pyautogui import alert
-from pyautogui import prompt
+from pyautogui import alert, prompt
 from tkinter import messagebox as mb
 
 # Abre o cmd e inicializa o repo # ---------------------->
