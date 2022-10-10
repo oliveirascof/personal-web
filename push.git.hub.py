@@ -31,7 +31,6 @@ if not push:
 
 # Realiza o push para o repo no Github # ---------------------->
 push = popen("git push -f origin main").read()
-print(push)
 alert("Finalizado!")
 
 # abre o repositorio no navegador
