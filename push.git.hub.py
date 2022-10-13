@@ -31,7 +31,6 @@ if not push:
 
 # Realiza o push para o repo no Github # ---------------------->
 push = popen("git push -f origin main").read()
-alert("Finalizado!")
 
 # abre o repositorio no navegador
 popen("start brave https://github.com/oliveirascof/personal-web")
